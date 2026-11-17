@@ -1,0 +1,14 @@
+# 하루세말 저장소: 공개 저장소이므로 자료원 원본·추출 텍스트·개인 메모는 절대 올리지 않는다.
+자료원/
+_텍스트추출/
+_private/
+*.hwp
+*.hwpx
+*.pdf
+*.docx
+*.xlsx
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+node_modules/

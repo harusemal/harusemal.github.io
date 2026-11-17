@@ -1,0 +1,53 @@
+:root{--bg:#f6f3ec;--ink:#2b2b2b;--sub:#777;--card:#fff;--warm:#fff6e5;--cool:#eaf6ee;--accent:#3559c7;--tip:#fffbea;--tipline:#f2c94c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic",sans-serif;line-height:1.6}
+header.site{position:sticky;top:0;z-index:5;background:rgba(246,243,236,.95);backdrop-filter:blur(6px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:12px 20px;border-bottom:1px solid #e6e0d3}
+.logo{text-decoration:none;color:var(--ink);font-weight:800;font-size:20px;display:flex;align-items:center;gap:8px}
+.logo small{font-weight:400;font-size:12px;color:var(--sub)}
+.logo .mark{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#f6a623;color:#fff;font-size:16px}
+nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--ink);padding:6px 12px;border-radius:20px;font-size:15px}
+nav a.on{background:#2b2b2b;color:#fff}
+.en{border:1.5px solid #ccc;background:#fff;border-radius:20px;padding:4px 10px;cursor:pointer;font-weight:700}
+.en.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+main{max-width:760px;margin:0 auto;padding:10px 16px 40px}
+.dayhead h2{margin:18px 0 0;font-size:26px}
+.dayhead p{margin:2px 0 10px;color:var(--sub)}
+.card{background:var(--card);border-radius:22px;box-shadow:0 4px 18px rgba(0,0,0,.07);margin:18px 0;overflow:hidden}
+.top{padding:18px 24px 0;display:flex;justify-content:space-between;align-items:center}
+.tag{font-size:13px;background:#eef3ff;color:var(--accent);padding:3px 10px;border-radius:20px}
+.star{border:none;background:none;font-size:24px;cursor:pointer;color:#ccc}
+.star.on{color:#f6a623}
+.card h3{margin:2px 24px 0;font-size:32px;letter-spacing:-1px}
+.card h3 span{color:#bbb;font-weight:400;margin:0 8px;font-size:22px}
+.q{margin:2px 24px 12px;color:var(--sub)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 24px}
+.side{border-radius:16px;padding:14px 10px 12px;text-align:center}
+.side.warm{background:var(--warm)}.side.cool{background:var(--cool)}
+.side b{font-size:26px;display:block}
+.side .hanja{font-size:13px;color:#888;min-height:18px;display:block}
+.side svg{width:140px;height:100px;margin:6px auto 0;display:block}
+.side .one{font-weight:700;margin-top:4px}
+.tip{margin:14px 24px 0;padding:12px 16px;border-radius:14px;background:var(--tip);border:2px dashed var(--tipline)}
+.tip .t{font-weight:700;color:#b7791f}
+.ex{margin:12px 24px 0;padding-left:18px}
+.ex mark{background:#ffe9a8;padding:0 3px;border-radius:4px}
+.enline{display:none;margin:10px 24px 0;padding:8px 12px;background:#eef3ff;border-radius:10px;font-size:14px;color:#2a3f8f}
+body.en-on .enline{display:block}
+.quiz{margin:14px 24px 22px;padding:12px 16px;background:#f3f4f6;border-radius:14px}
+.opt{display:inline-block;margin:8px 8px 0 0;padding:6px 16px;border:1.5px solid #ccc;border-radius:20px;background:#fff;cursor:pointer;font-size:15px}
+.opt.right{background:#2fa35a;color:#fff;border-color:#2fa35a}
+.opt.wrong{background:#e05252;color:#fff;border-color:#e05252}
+.fb{margin-top:6px;font-weight:700}
+.empty{color:var(--sub);background:#fff;border-radius:16px;padding:20px;text-align:center}
+.saveditem{background:#fff;border-radius:14px;padding:12px 16px;margin:10px 0;display:flex;justify-content:space-between;align-items:center}
+.flashcard{background:#fff;border-radius:22px;min-height:220px;display:grid;place-items:center;text-align:center;padding:24px;font-size:22px;box-shadow:0 4px 18px rgba(0,0,0,.07);cursor:pointer;user-select:none}
+.flashcard .hint{display:block;font-size:13px;color:var(--sub);margin-top:10px}
+.flashbtns{display:flex;gap:10px;justify-content:center;margin-top:14px}
+.btn{border:none;border-radius:20px;padding:9px 18px;font-size:15px;cursor:pointer}
+.btn.good{background:#2fa35a;color:#fff}.btn.again{background:#e9e4d8}
+.count{text-align:center;color:var(--sub);margin-top:8px}
+.shortin{font-size:16px;padding:6px 10px;border-radius:10px;border:1.5px solid #ccc;margin-top:8px}
+footer.site{max-width:760px;margin:0 auto;padding:10px 16px 40px;font-size:13px;color:var(--sub)}
+footer.site p{margin:4px 0}
+@media (max-width:560px){.card h3{font-size:26px}.side b{font-size:22px}.side svg{width:110px;height:80px}.logo small{display:none}}
